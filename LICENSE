@@ -1,0 +1,86 @@
+LICENSE — SCOPE STATEMENT
+
+This repository contains two kinds of material, licensed differently. Read this scope
+statement before relying on the licence below.
+
+────────────────────────────────────────────────────────────────────────────────
+1. NOT COVERED BY THIS LICENCE
+────────────────────────────────────────────────────────────────────────────────
+
+The following are the property of third parties and are NOT licensed to you by the
+maintainer of this repository under any terms whatsoever:
+
+  • All ISTQB(R) material — including any quoted syllabus wording, learning-objective
+    statements, sample-exam questions, official answer rationale, and exam structure
+    data. Copyright (C) International Software Testing Qualifications Board and the
+    named syllabus and sample-exam authors. Used here under the ISTQB(R) conditions of
+    use for non-commercial extracts with acknowledgement. See NOTICE.md for the full,
+    verbatim copyright notice and author credits.
+
+  • Every video, course, book, article, podcast and code repository linked from
+    docs/RESOURCES.md. These remain the property of their respective creators and
+    publishers. This repository links to them; it does not host, mirror, embed or
+    transcribe them.
+
+ISTQB(R) is a registered trademark of the International Software Testing Qualifications
+Board. This repository is not affiliated with, endorsed by, accredited by or sponsored
+by the ISTQB(R), any ISTQB(R)-recognized Member Board, or any Accredited Training
+Provider.
+
+────────────────────────────────────────────────────────────────────────────────
+2. COVERED BY THIS LICENCE
+────────────────────────────────────────────────────────────────────────────────
+
+The maintainer's own original contributions: the structure and organisation of the
+study guides, the explanations and commentary, the derived practice questions and
+answer explanations, the mnemonics, comparison tables, flashcards, study plans, exam
+tactics, the curation of external resources, and all Markdown documentation in this
+repository.
+
+These are licensed under:
+
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+    (CC BY-NC-SA 4.0)
+
+    Copyright (C) 2026 the repository maintainer
+
+You are free to:
+
+    Share  — copy and redistribute the material in any medium or format
+    Adapt  — remix, transform, and build upon the material
+
+Under the following terms:
+
+    Attribution   — You must give appropriate credit, provide a link to the licence,
+                    and indicate if changes were made.
+    NonCommercial — You may not use the material for commercial purposes.
+    ShareAlike    — If you remix, transform, or build upon the material, you must
+                    distribute your contributions under the same licence as the
+                    original.
+
+    No additional restrictions — You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the licence permits.
+
+Full licence text: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The NonCommercial term is deliberate: the underlying ISTQB(R) permission this material
+depends on is itself limited to non-commercial use. A more permissive licence here
+would misrepresent rights that the maintainer does not hold.
+
+────────────────────────────────────────────────────────────────────────────────
+3. NO WARRANTY
+────────────────────────────────────────────────────────────────────────────────
+
+This material is provided "as is", without warranty of any kind, express or implied.
+It is an unofficial study aid. It does not guarantee an exam result, and it is not a
+substitute for the official ISTQB(R) syllabus, sample exams, or accredited training.
+In case of any discrepancy, the official ISTQB(R) documents prevail.
+
+────────────────────────────────────────────────────────────────────────────────
+4. RIGHTS HOLDERS
+────────────────────────────────────────────────────────────────────────────────
+
+If you own rights in material referenced here and believe its use exceeds your
+permitted conditions of use, please open an issue on this repository. Requests will be
+acted on promptly and in good faith. See NOTICE.md, section 4.

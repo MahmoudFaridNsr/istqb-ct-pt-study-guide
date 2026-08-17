@@ -1,0 +1,9 @@
+{
+  "name": "istqb-ct-pt-study-guide-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generators for the ISTQB CT-PT chapter study guides",
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}
