@@ -114,12 +114,15 @@ It prints:
 
 ```
 file       guides/pdf/04-performance-testing-tasks.pdf
-pages      83
-questions  70
+pages      73
+questions  45
 flashcards 95
 blank      []
 stray mkup 0
 ```
+
+(`pages` above is indicative — the guides shrank when the practice bank was trimmed, so
+re-measure it from your own render rather than treating it as a fixed target.)
 
 **How to read it:**
 
@@ -133,13 +136,18 @@ stray mkup 0
 
 Current expected values:
 
-| Guide | Pages | Questions | Flashcards (reported) |
-| --- | --- | --- | --- |
-| 01-basic-concepts | 42 | 34 | 46 |
-| 02-performance-measurement-fundamentals | 38 | 30 | 36 |
-| 03-performance-testing-in-the-software-lifecycle | 44 | 35 | 46 |
-| 04-performance-testing-tasks | 83 | 70 | 95 |
-| 05-tools | 33 | 24 | 31 |
+| Guide | Questions | Flashcards (reported) |
+| --- | --- | --- |
+| 01-basic-concepts | 17 | 46 |
+| 02-performance-measurement-fundamentals | 13 | 36 |
+| 03-performance-testing-in-the-software-lifecycle | 20 | 46 |
+| 04-performance-testing-tasks | 45 | 95 |
+| 05-tools | 10 | 31 |
+
+(**Questions** counts the `Correct answer` boxes — all 40 official sample-exam questions are kept,
+the rest are the strongest syllabus-derived items per objective. **Flashcards (reported)** is the
+`FRONT` count, one more than the real card count; those were not trimmed. Page counts depend on the
+render and are no longer pinned here.)
 
 ---
 

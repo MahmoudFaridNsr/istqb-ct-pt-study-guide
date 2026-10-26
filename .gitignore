@@ -1,0 +1,42 @@
+# ---------------------------------------------------------------------------
+# Official ISTQB® source documents — must NEVER be committed.
+# See docs/COPYRIGHT-RISK.md. Redistributing whole official PDFs is not an
+# "extract" and is the single fastest way to attract a takedown.
+#
+# Strategy: ignore every PDF and Office document anywhere in the repo, then
+# re-include only the guides this project generates itself.
+# ---------------------------------------------------------------------------
+*.pdf
+*.docx
+*.doc
+*.pptx
+*.ppt
+
+# Re-include the generated study guides and their rendered PDFs.
+!guides/
+!guides/**/
+!guides/*.docx
+!guides/pdf/*.pdf
+
+# A convenient place to drop the official downloads while studying — ignored.
+official/
+sources/
+
+# ---------------------------------------------------------------------------
+# Build / tooling
+# ---------------------------------------------------------------------------
+node_modules/
+tools/node_modules/
+package-lock.json
+tools/package-lock.json
+npm-debug.log*
+
+# ---------------------------------------------------------------------------
+# OS and editor cruft
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*~
+.idea/
+.vscode/
+*.tmp

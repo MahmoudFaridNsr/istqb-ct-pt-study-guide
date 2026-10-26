@@ -5,7 +5,7 @@ module.exports = function () {
   const B = [];
   B.push({ pagebreak: true });
   B.push({ h1: "Section 4 — Demo Questions with Answers" });
-  B.push({ lead: "Questions 1–6 are the **official ISTQB CT-PT Sample Exam questions for Chapter 1** — questions #1 to #6, reproduced with their official correct answers and rationale. Questions 7–34 are additional items derived strictly from the syllabus text, in the same style and difficulty. Correct options are marked ✔ — cover the green box and self-test first." });
+  B.push({ lead: "Questions 1–6 are the **official ISTQB CT-PT Sample Exam questions for Chapter 1** — questions #1 to #6, reproduced with their official correct answers and rationale. Questions 7–17 are additional items derived strictly from the syllabus text, in the same style and difficulty. Correct options are marked ✔ — cover the green box and self-test first." });
 
   B.push({ h2: "Part A — The 6 official Chapter 1 questions" });
 
@@ -70,41 +70,22 @@ module.exports = function () {
     why: "**(d) With a memory leak, response time will degrade over time** — the time length is **unknown until you test it**. (a) is an indication of **underlying performance issues such as bad design, under-powered hardware, network latency**. (b) is an indication of **resource pool, queue or stack issues as well as invalid timeout settings**. (c) is an indication that **some of the resources may become saturated, but only at high loads**. All four options are the four failure modes — the question is decided entirely by which one owns _memory leak_." } });
 
   B.push({ pagebreak: true });
-  B.push({ h2: "Part B — 28 additional syllabus-derived questions" });
+  B.push({ h2: "Part B — 11 additional syllabus-derived questions" });
 
   // ---- PTFL-1.1.1 ----
-  B.push({ q: { n: 7, tag: "Recall", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["b"],
-    stem: "In which standard's product quality model is performance efficiency categorized, and as what kind of characteristic?",
-    opts: [
-      "ISO/IEC 7498-1, as a communications characteristic",
-      "ISO 25010, as a non-functional quality characteristic",
-      "ISO 26262, as a safety-related characteristic",
-      "ISO 25010, as a functional quality characteristic",
-    ],
-    why: "The syllabus states that **performance efficiency is categorized in the ISO 25010 Product Quality Model as a non-functional quality characteristic** with **three sub-characteristics**. ISO/IEC 7498-1 is the **OSI model** reference used in §4.2.1 for communication protocols — a favourite distractor because both standards appear in this syllabus." } });
 
-  B.push({ q: { n: 8, tag: "Definition matching", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["c"],
-    stem: "Which sub-characteristic of performance efficiency is described as \"generally the most common performance testing objective\"?",
-    opts: ["Capacity", "Resource utilization", "Time behavior", "Scalability"],
-    why: "**Time behavior** — \"_generally the evaluation of time behavior is the most common performance testing objective_\". It examines the ability to **respond to user or system inputs within a specified time and under specified conditions**, and its measurements range from **end-to-end time** down to **the number of CPU cycles** a component needs. **Scalability is not a sub-characteristic at all** — the syllabus says **all three sub-characteristics impact the ability of the SUT to scale**." } });
 
-  B.push({ q: { n: 9, tag: "Classification", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["a"],
+
+
+  B.push({ q: { n: 7, tag: "Classification", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["a"],
     scenario: "A risk analysis has flagged that the system may not behave correctly when the number of stored records grows to the levels the business expects, and the team wants to know whether the chosen architecture is suitable.",
     stem: "Which sub-characteristic of performance efficiency is being investigated?",
     opts: ["Capacity", "Time behavior", "Resource utilization", "Reproducibility"],
     why: "**Capacity.** The syllabus defines it as: if issues of **system behavior at the required capacity limits** of the system (e.g., **numbers of users or volumes of data**) are identified as a risk, performance tests may be conducted to **evaluate the suitability of the system architecture**. The phrase _suitability of the system architecture_ appears only under capacity. **Reproducibility is a principle, not a sub-characteristic.**" } });
 
-  B.push({ q: { n: 10, tag: "Tricky", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["d"],
-    stem: "Which statement about the scope of performance testing is consistent with the syllabus?",
-    opts: [
-      "Performance testing applies only to web-based systems, where the end user is the focus",
-      "Performance testing is a purely technical discipline and is kept separate from usability engineering",
-      "Testing other quality characteristics under load rarely reveals anything new about those characteristics",
-      "Performance testing applies to a variety of architectures including classic client-server, distributed and embedded, and is often closely integrated with usability engineering and performance engineering",
-    ],
-    why: "The syllabus states performance testing is **not limited to the web-based domain**; it is **also relevant to different application domains with a variety of system architectures, such as classic client-server, distributed and embedded**, and is **often closely integrated with other disciplines such as usability engineering and performance engineering**. It also states that evaluating **functional suitability, usability and other quality characteristics under conditions of load may reveal load-specific issues** — which rules out (c)." } });
 
-  B.push({ q: { n: 11, tag: "Tricky · principle wording", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["b"],
+
+  B.push({ q: { n: 8, tag: "Tricky · principle wording", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["b"],
     stem: "The reproducibility principle requires that repeating a test on an unchanged system yields which of the following?",
     opts: [
       "Bit-for-bit identical results",
@@ -114,43 +95,16 @@ module.exports = function () {
     ],
     why: "The syllabus wording is precise: **statistically identical results (within a specified tolerance) must be obtained by repeating the tests on an unchanged system**. Both qualifiers matter. Option (c) describes the **caching problem** the syllabus warns about in §4.2.7, which is a defect in the test, not a property of a reproducible one." } });
 
-  B.push({ q: { n: 12, tag: "Recall · list", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["c"],
-    stem: "The first performance testing principle requires that tests be aligned to the defined expectations of different stakeholder groups. Which three groups does the syllabus name in particular?",
-    opts: [
-      "Testers, developers and auditors",
-      "Customers, suppliers and regulators",
-      "Users, system designers and operations staff",
-      "Product owners, scrum masters and architects",
-    ],
-    why: "**Users, system designers and operations staff.** These three reappear later: the **user-based versus technical objectives** split in **PTFL-4.1.1**, and the **business-focused versus technology-focused stakeholder communication** in **PTFL-4.1.3**. Learning them once pays three times." } });
 
-  B.push({ q: { n: 13, tag: "Tricky · environment", meta: "LO: PTFL-1.1.1 (K2) | Syllabus §1.1", correct: ["b"],
-    stem: "According to the performance testing principles, where may performance tests be conducted?",
-    opts: [
-      "Only on the complete production system, since anything smaller is unrepresentative",
-      "On complete or partial systems, or test environments that are representative of the production system, where resources allow",
-      "Only in an isolated laboratory, never on partial systems",
-      "Anywhere, since the environment has no measurable effect on performance results",
-    ],
-    why: "Principle 4: the tests **can be conducted, where resources allow, either on complete or partial systems or test environments that are representative of the production system**. Note the three permitted targets and the qualifier **where resources allow**. Option (d) contradicts **PTFL-4.2.8**, which states that **performance is a non-linear function of the environment**." } });
+
+
 
   // ---- PTFL-1.2.1 ----
-  B.push({ q: { n: 14, tag: "Definition matching", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["c"],
-    stem: "Which of the following is the best description of stress testing?",
-    opts: [
-      "It focuses on the ability of the system to handle loads that are gradually increased to reach the expected maximum",
-      "It focuses on the stability of the system over a time frame specific to its operational context",
-      "It focuses on the ability to handle peak loads at or beyond the limits of anticipated workloads, and on reduced availability of resources",
-      "It determines how many users a given system will support while still meeting the stated performance objectives",
-    ],
-    why: "**Stress testing** focuses on peak loads **at or beyond the limits of anticipated or specified workloads**, and is **also used to evaluate a system's ability to handle reduced availability of resources such as accessible computing capacity, available bandwidth, and memory**. That second clause is unique to stress testing and is the fastest way to recognise it. (a) is load, (b) is endurance, (d) is capacity." } });
 
-  B.push({ q: { n: 15, tag: "Definition matching", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["a"],
-    stem: "Which type of performance testing verifies that there are no resource capacity problems — such as memory leaks, database connections or thread pools — that may eventually degrade performance or cause failures at breaking points?",
-    opts: ["Endurance testing", "Stress testing", "Concurrency testing", "Capacity testing"],
-    why: "**Endurance testing** focuses on the **stability of the system over a time frame specific to the system's operational context**, and the three examples of resource capacity problems the syllabus names are exactly **memory leaks, database connections and thread pools**. Notice how this dovetails with the **degraded response over time** failure mode in §1.5." } });
 
-  B.push({ q: { n: 16, tag: "Tricky · pair", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["d"],
+
+
+  B.push({ q: { n: 9, tag: "Tricky · pair", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["d"],
     stem: "What distinguishes capacity testing from scalability testing?",
     opts: [
       "Capacity testing uses virtual users; scalability testing uses real users",
@@ -160,65 +114,35 @@ module.exports = function () {
     ],
     why: "**Capacity measures today's ceiling** — _how many users and/or transactions a given system will support and still meet the stated performance objectives_. **Scalability asks whether the ceiling can be raised** — the ability to meet **future efficiency requirements which may be beyond those currently required**, growing **without violating the currently specified performance requirements or failing**. Neither is defined by tooling, duration, or static-versus-dynamic." } });
 
-  B.push({ q: { n: 17, tag: "Application", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["b"],
+  B.push({ q: { n: 10, tag: "Application", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["b"],
     scenario: "An online examination platform expects every candidate in a national cohort to press \"Start\" at exactly 09:00. The team is worried about what happens at that instant rather than about the sustained load afterwards.",
     stem: "Which type of performance testing most directly addresses this concern?",
     opts: ["Endurance testing", "Concurrency testing", "Scalability testing", "Capacity testing"],
     why: "**Concurrency testing** focuses on the impact of situations where **specific actions occur simultaneously** — the syllabus's own example is **large numbers of users logging in at the same time**. The syllabus adds that such issues are **notoriously difficult to find and reproduce**, particularly in an environment where testing has **little or no control, such as production**." } });
 
-  B.push({ q: { n: 18, tag: "Tricky", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["c"],
-    stem: "According to the syllabus, what becomes possible once the limits of scalability are known?",
-    opts: [
-      "The system can be certified as defect-free at any load",
-      "Stress testing becomes unnecessary",
-      "Threshold values can be set and monitored in production to warn of problems about to arise, and the production environment may be adjusted with appropriate amounts of hardware",
-      "The operational profile can be replaced by a fixed load profile",
-    ],
-    why: "The syllabus states: \"_Once the limits of scalability are known, **threshold values can be set and monitored in production to provide a warning of problems which may be about to arise**. In addition the production environment may be **adjusted with appropriate amounts of hardware**._\" This is one of the few places where the syllabus explicitly links a test type to **production monitoring** — and it connects to the **monitoring tools** discussion in **PTFL-5.1.1**." } });
 
-  B.push({ q: { n: 19, tag: "Recall", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["a"],
-    stem: "Which term does the syllabus define as an umbrella term including any kind of testing focused on the responsiveness of the system or component under different volumes of load?",
-    opts: ["Performance testing", "Load testing", "Efficiency testing", "Capacity testing"],
-    why: "**Performance testing** is the umbrella. The distinction matters: a stem that describes a specific behaviour (anticipated maximum, sudden burst, long duration) is asking about a **specific type**, whereas a stem that describes the whole discipline is asking about the umbrella. **Load testing is not the umbrella** — it is one of the seven specific types under it." } });
 
-  B.push({ q: { n: 20, tag: "Application", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["b"],
+
+
+  B.push({ q: { n: 11, tag: "Application", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["b"],
     scenario: "A payments gateway currently handles 400 transactions per second within its response-time targets. The business plans to acquire a competitor and expects volumes to triple within eighteen months. Management wants to know whether the current architecture can grow to meet that demand without breaching today's response-time requirements.",
     stem: "Which type of performance testing is being requested?",
     opts: ["Capacity testing", "Scalability testing", "Stress testing", "Load testing"],
     why: "**Scalability testing** — the objective is to determine the system's **ability to grow** (more users, larger data volumes) **without violating the currently specified performance requirements or failing**, in order to meet **future efficiency requirements which may be beyond those currently required**. Capacity testing would answer \"how many can we take **today**\"; scalability answers \"can we take **more later**\"." } });
 
-  B.push({ q: { n: 21, tag: "Tricky · elimination", meta: "LO: PTFL-1.2.1 (K2) | Syllabus §1.2", correct: ["c"],
-    stem: "A test drives the system to 130% of its specified maximum workload and then also repeats the run with half the normal memory available. Which single type covers both of these?",
-    opts: ["Spike testing", "Capacity testing", "Stress testing", "Concurrency testing"],
-    why: "**Stress testing** is the only type whose definition covers **both** halves: peak loads **at or beyond the limits of anticipated or specified workloads**, **and** the ability to handle **reduced availability of resources such as accessible computing capacity, available bandwidth, and memory**. Spike testing is about a **sudden burst and the return to a steady state**, not about resource starvation." } });
+
 
   // ---- PTFL-1.3.1 ----
-  B.push({ q: { n: 22, tag: "Recall", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.1", correct: ["d"],
-    stem: "Why does the syllabus say static testing activities are often more important for performance testing than for functional suitability testing?",
-    opts: [
-      "Because dynamic performance testing is prohibited before system testing",
-      "Because static testing is cheaper than dynamic testing in every project",
-      "Because performance defects cannot be detected dynamically",
-      "Because so many critical performance defects are introduced in the architecture and design of the system",
-    ],
-    why: "The syllabus reason is exactly (d). It then names the sources: **misunderstandings or a lack of knowledge by the designers and architects**, and **requirements that did not adequately capture the response time, throughput, or resource utilization targets, the expected load and usage of the system, or the constraints**. Cost is never given as the reason." } });
 
-  B.push({ q: { n: 23, tag: "Recall · list", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.1", correct: ["b"],
-    stem: "Which of the following is listed by the syllabus as a static testing activity for performance?",
-    opts: [
-      "Profiling a component under load to find bottlenecks",
-      "Reviews of database schemas, entity-relationship diagrams, metadata, stored procedures and queries",
-      "Executing end-to-end workflows with realistic data volumes",
-      "Running a scaled-down load test against a partial system",
-    ],
-    why: "The four static activities are: reviews of **requirements** (performance aspects and risks) · reviews of **database schemas, entity-relationship diagrams, metadata, stored procedures and queries** · reviews of the **system and network architecture** · reviews of **critical segments of the system code** (e.g., complex algorithms). Options (a), (c) and (d) all involve **execution**, so they are dynamic by definition." } });
 
-  B.push({ q: { n: 24, tag: "Level mapping", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["c"],
+
+
+  B.push({ q: { n: 12, tag: "Level mapping", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["c"],
     stem: "At which test level does the syllabus note that it is not uncommon for the \"user\" to be another system or machine, for example inputs from sensors?",
     opts: ["Unit testing", "Component integration testing", "System integration testing", "Acceptance testing"],
     why: "**System integration testing**, where dynamic performance testing focuses on **data flows and workflows across key inter-system interfaces**. The syllabus explicitly notes that at this level the \"user\" is often **another system or machine**. This idea returns in **PTFL-4.2.3** as the _systems of systems_ operational profile." } });
 
-  B.push({ q: { n: 25, tag: "Tricky · qualifier", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["a"],
+  B.push({ q: { n: 13, tag: "Tricky · qualifier", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["a"],
     stem: "What is the stated purpose of dynamic performance testing during acceptance testing?",
     opts: [
       "To build user, customer and operator confidence and to fine tune the system under real world conditions — but generally not to find performance defects",
@@ -228,38 +152,14 @@ module.exports = function () {
     ],
     why: "The syllabus qualifier is explicit: acceptance-level dynamic performance testing exists to **build user, customer and operator confidence** and to **fine tune the system under real world conditions**, and is **generally not to find performance defects in the system**. Any option that turns acceptance testing into a defect hunt is wrong for this LO." } });
 
-  B.push({ q: { n: 26, tag: "Recall", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["d"],
-    stem: "What does the syllabus advise about using simulators when custom or new hardware is part of the system?",
-    opts: [
-      "Simulators should be used for the whole project because real hardware is too expensive",
-      "Simulators must never be used for performance work",
-      "Simulators capture resource constraints more accurately than the real hardware",
-      "Early dynamic performance tests can use simulators, but it is good practice to start testing on the actual hardware as soon as possible",
-    ],
-    why: "The syllabus reason for moving to real hardware is that **simulators often do not adequately capture resource constraints and performance-related behaviors**. Simulators are permitted for **early** tests only — they are a bridge, not a destination." } });
 
-  B.push({ q: { n: 27, tag: "Lifecycle", meta: "LO: PTFL-1.3.1 (K1) | Syllabus §1.3.2", correct: ["b"],
-    stem: "What does the syllabus recommend for Agile and other iterative-incremental lifecycles?",
-    opts: [
-      "Defer all performance testing to a hardening iteration at the end",
-      "Incorporate static and dynamic performance testing into early iterations rather than waiting for final iterations",
-      "Perform only static performance testing, since iterations are too short for dynamic tests",
-      "Perform performance testing only when a dedicated performance team is available",
-    ],
-    why: "\"_In Agile and other iterative-incremental lifecycles, teams should incorporate **static and dynamic performance testing into early iterations** rather than waiting for final iterations to address performance risks._\" This is the Chapter 1 seed of the much longer treatment in **PTFL-3.4.1**, where dedicated performance iterations and CI performance tests are discussed." } });
+
+
 
   // ---- PTFL-1.4.1 ----
-  B.push({ q: { n: 28, tag: "Recall · list", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["c"],
-    stem: "Which of the following is one of the three ways in which a performance test load differs from the data inputs used for functional test cases?",
-    opts: [
-      "It must always be generated from the production environment",
-      "It must be recorded rather than programmed",
-      "Its generation is dependent on the absence of any functional defects in the system under test which may impact test execution",
-      "It must always be reproducible to the millisecond",
-    ],
-    why: "The three differences are: the load must represent **many user inputs, not just one**; it **may require dedicated hardware and tools** for generation; and its generation is **dependent on the absence of any functional defects in the SUT** which may impact test execution. That third one is the least intuitive and therefore the most examinable — you cannot load-test through a functional defect." } });
 
-  B.push({ q: { n: 29, tag: "Application", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["a"],
+
+  B.push({ q: { n: 14, tag: "Application", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["a"],
     scenario: "A consumer web application must be exercised from many countries, on a wide range of real device types and configurations, and the organisation has access to a large pool of testers willing to take part.",
     stem: "Which load generation approach is being described, and what is its principal limitation?",
     opts: [
@@ -270,17 +170,9 @@ module.exports = function () {
     ],
     why: "This is **load generation using crowds**: testers organised so the **desired load can be generated**, suitable for applications **reachable from anywhere in the world** and involving **a wide range of different device types and configurations**. Its stated downside is that the load is **not as reproducible and precise as other options** and it is **more complex to organize**." } });
 
-  B.push({ q: { n: 30, tag: "Tricky", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["b"],
-    stem: "Which load generation approach does the syllabus describe as potentially the most representative for end-to-end tests, while also warning that it rapidly becomes impractical as the number of simulated users increases?",
-    opts: [
-      "Load generation using captured communication protocols",
-      "Load generation via the user interface",
-      "Load generation via the API",
-      "Load generation using crowds",
-    ],
-    why: "**Via the user interface.** The syllabus says \"_Testing through the UI may be the most representative approach for end-to-end tests_\", but also that it **may rapidly become impractical as the numbers of users to be simulated increases**, and that the **stability of the UI represents a critical dependency** — **frequent changes can impact the repeatability of performance tests and may significantly affect the maintenance costs**." } });
 
-  B.push({ q: { n: 31, tag: "Tricky · levels", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["d"],
+
+  B.push({ q: { n: 15, tag: "Tricky · levels", meta: "LO: PTFL-1.4.1 (K2) | Syllabus §1.4", correct: ["d"],
     stem: "How does the syllabus relate the API level to the communications protocol level?",
     opts: [
       "They are the same level, described with two names",
@@ -291,7 +183,7 @@ module.exports = function () {
     why: "The official rationale for Sample Exam question #5 states it directly: **the communications protocol level is one level below the API level**. This ordering is what makes the protocol approach able to simulate **potentially very large numbers of users in a repeatable and reliable manner**, and what makes **correlation** necessary (see **PTFL-4.2.7**)." } });
 
   // ---- PTFL-1.5.1 ----
-  B.push({ q: { n: 32, tag: "Cause to symptom", meta: "LO: PTFL-1.5.1 (K2) | Syllabus §1.5", correct: ["b"],
+  B.push({ q: { n: 16, tag: "Cause to symptom", meta: "LO: PTFL-1.5.1 (K2) | Syllabus §1.5", correct: ["b"],
     stem: "A system's response times remain acceptable at all load levels, but at beyond-limit loads its error handling becomes graceless and unhelpful. Which underlying defects does the syllabus associate with this failure mode?",
     opts: [
       "Memory leaks, disk fragmentation and unexpected database growth",
@@ -301,17 +193,9 @@ module.exports = function () {
     ],
     why: "The failure mode is **inadequate or graceless error handling under heavy or over-limit load**, and its underlying defects are exactly **insufficient resource pools, undersized queues and stacks, and too rapid time-out settings**. Option (a) belongs to **degraded response over time**, (c) to **slow response under all load levels**, and (d) to **slow response under moderate-to-heavy load levels**." } });
 
-  B.push({ q: { n: 33, tag: "Tricky", meta: "LO: PTFL-1.5.1 (K2) | Syllabus §1.5", correct: ["c"],
-    stem: "Which failure mode does the syllabus say can be identified during functional and usability testing as well as during performance testing?",
-    opts: [
-      "Degraded response over time",
-      "Inadequate error handling under over-limit load",
-      "Slow response under all load levels",
-      "Slow response under moderate-to-heavy load levels",
-    ],
-    why: "For **slow response under all load levels**, the syllabus notes that the underlying issues — **bad database design or implementation, network latency, and other background loads** — \"_can be identified during functional and usability testing, not just performance testing, so **test analysts should keep an eye open for them and report them**_\". This is the only failure mode carrying that instruction, because it is the only one that shows up **regardless of load**." } });
 
-  B.push({ q: { n: 34, tag: "Diagnosis", meta: "LO: PTFL-1.5.1 (K2) | Syllabus §1.5", correct: ["a"],
+
+  B.push({ q: { n: 17, tag: "Diagnosis", meta: "LO: PTFL-1.5.1 (K2) | Syllabus §1.5", correct: ["a"],
     scenario: "A batch reconciliation job that must finish before the online day begins is still running when the first users log in.",
     stem: "Which diagnosis does the syllabus give for this specific example?",
     opts: [
@@ -326,11 +210,11 @@ module.exports = function () {
   B.push({ h2: "Most Important Questions From This Chapter" });
   B.push({ lead: "Ranking rationale: the ISTQB Exam Structure Table gives Chapter 1 six questions across five objectives, with **PTFL-1.2 receiving two**. Every objective is guaranteed, so the ranking reflects **marks at stake per unit of study effort**." });
   B.push({ table: { head: ["Rank", "Topic / question focus", "LO", "Why it matters"], widths: [0.9, 6.2, 1.9, 5.0], rows: [
-    ["1", "The eight types of performance testing, especially the load / stress / scalability / spike quartet — Q2, Q3, Q14–Q21", "PTFL-1.2.1", "**2 guaranteed marks**, asked as pure definition matching with an **identical option set** both times. The cheapest two marks on the entire paper."],
-    ["2", "Which dynamic activity belongs at which test level, plus the four static review activities — Q4, Q22–Q27", "PTFL-1.3.1", "**1 guaranteed mark** at **K1**, decided by a single table. Also underpins Chapter 3's lifecycle questions."],
-    ["3", "The four failure modes and their causes, in both directions — Q6, Q32–Q34", "PTFL-1.5.1", "**1 guaranteed mark.** All four distractors are the other three modes, so the table answers by elimination as well as directly."],
-    ["4", "The four load generation options and the API-versus-protocol distinction — Q5, Q28–Q31", "PTFL-1.4.1", "**1 guaranteed mark**, and the vocabulary feeds **PTFL-4.2.6** and **PTFL-4.2.7** in the 20-mark chapter."],
-    ["5", "The five principles and the three sub-characteristics — Q1, Q7–Q13", "PTFL-1.1.1", "**1 guaranteed mark**, and **reproducibility** is the answer the official exam chose. The stakeholder trio also reappears twice in Chapter 4."],
+    ["1", "The eight types of performance testing, especially the load / stress / scalability / spike quartet — Q2, Q3, Q9–Q11", "PTFL-1.2.1", "**2 guaranteed marks**, asked as pure definition matching with an **identical option set** both times. The cheapest two marks on the entire paper."],
+    ["2", "Which dynamic activity belongs at which test level, plus the four static review activities — Q4, Q12, Q13", "PTFL-1.3.1", "**1 guaranteed mark** at **K1**, decided by a single table. Also underpins Chapter 3's lifecycle questions."],
+    ["3", "The four failure modes and their causes, in both directions — Q6, Q16, Q17", "PTFL-1.5.1", "**1 guaranteed mark.** All four distractors are the other three modes, so the table answers by elimination as well as directly."],
+    ["4", "The four load generation options and the API-versus-protocol distinction — Q5, Q14, Q15", "PTFL-1.4.1", "**1 guaranteed mark**, and the vocabulary feeds **PTFL-4.2.6** and **PTFL-4.2.7** in the 20-mark chapter."],
+    ["5", "The five principles and the three sub-characteristics — Q1, Q7, Q8", "PTFL-1.1.1", "**1 guaranteed mark**, and **reproducibility** is the answer the official exam chose. The stakeholder trio also reappears twice in Chapter 4."],
   ] } });
 
   return B;

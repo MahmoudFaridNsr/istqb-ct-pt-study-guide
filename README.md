@@ -4,8 +4,10 @@ Chapter-by-chapter study guides for the **ISTQB® Certified Tester Foundation Le
 Performance Testing (CT-PT), Syllabus 2018**, plus the prerequisites, background material and study
 plans that make the syllabus click instead of just being memorised.
 
-Five guides, **240 pages**, **193 practice questions** and **249 flashcards**. Every learning
-objective explained, every official sample-exam question mapped to the objective it tests.
+Five guides, **105 practice questions** and **249 flashcards**. Every learning objective explained,
+every official sample-exam question kept and mapped to the objective it tests — with a deliberately
+tight practice set (all 40 official questions plus the strongest syllabus-derived items per
+objective) so you cover the whole syllabus in less time.
 
 > **Unofficial.** Not affiliated with, endorsed by, accredited by or sponsored by the ISTQB®.
 > ISTQB® is a registered trademark of the International Software Testing Qualifications Board.
@@ -35,17 +37,19 @@ Each guide is a self-contained `.docx` with a cover page, live table of contents
 **1** syllabus explanation per objective · **2** key concepts · **3** tables and summaries ·
 **4** question bank with answers · **5** exam tricks · **6** flashcards · **7** revision notes.
 
-| # | Chapter | Read | Edit | Exam Qs | Points | Teaching | Pts/hr | Pages | Practice Qs | Cards |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Basic Concepts | [PDF](guides/pdf/01-basic-concepts.pdf) | [docx](guides/01-basic-concepts.docx) | 6 | 6 | 60 min | **6.0** | 42 | 34 | 45 |
-| 2 | Performance Measurement Fundamentals | [PDF](guides/pdf/02-performance-measurement-fundamentals.pdf) | [docx](guides/02-performance-measurement-fundamentals.docx) | 4 | 4 | 55 min | **4.4** | 38 | 30 | 35 |
-| 3 | Performance Testing in the Software Lifecycle | [PDF](guides/pdf/03-performance-testing-in-the-software-lifecycle.pdf) | [docx](guides/03-performance-testing-in-the-software-lifecycle.docx) | 7 | 7 | 195 min | 2.2 | 44 | 35 | 45 |
-| 4 | Performance Testing Tasks | [PDF](guides/pdf/04-performance-testing-tasks.pdf) | [docx](guides/04-performance-testing-tasks.docx) | **20** | **20** | 475 min | 2.5 | 83 | 70 | 94 |
-| 5 | Tools | [PDF](guides/pdf/05-tools.pdf) | [docx](guides/05-tools.docx) | 3 | 3 | 90 min | 2.0 | 33 | 24 | 30 |
-| | **Total** | | | **40** | **40** | 875 min | | **240** | **193** | **249** |
+| # | Chapter | Read | Edit | Exam Qs | Points | Teaching | Pts/hr | Practice Qs | Cards |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Basic Concepts | [PDF](guides/pdf/01-basic-concepts.pdf) | [docx](guides/01-basic-concepts.docx) | 6 | 6 | 60 min | **6.0** | 17 | 45 |
+| 2 | Performance Measurement Fundamentals | [PDF](guides/pdf/02-performance-measurement-fundamentals.pdf) | [docx](guides/02-performance-measurement-fundamentals.docx) | 4 | 4 | 55 min | **4.4** | 13 | 35 |
+| 3 | Performance Testing in the Software Lifecycle | [PDF](guides/pdf/03-performance-testing-in-the-software-lifecycle.pdf) | [docx](guides/03-performance-testing-in-the-software-lifecycle.docx) | 7 | 7 | 195 min | 2.2 | 20 | 45 |
+| 4 | Performance Testing Tasks | [PDF](guides/pdf/04-performance-testing-tasks.pdf) | [docx](guides/04-performance-testing-tasks.docx) | **20** | **20** | 475 min | 2.5 | 45 | 94 |
+| 5 | Tools | [PDF](guides/pdf/05-tools.pdf) | [docx](guides/05-tools.docx) | 3 | 3 | 90 min | 2.0 | 10 | 30 |
+| | **Total** | | | **40** | **40** | 875 min | | **105** | **249** |
 
 The `.docx` files keep the live table of contents (right-click → *Update Field* in Word). The PDFs
-are for reading on GitHub or on a phone.
+are for reading on GitHub or on a phone. **The PDFs in `guides/pdf/` are regenerated from the
+`.docx` with LibreOffice** (see [`tools/README.md`](tools/README.md)); after a content change they
+are stale until that step is run.
 
 **Where the points are.** Chapter 4 alone is **20 of the 40 points — exactly half the paper**. A
 perfect score on every other chapter is only **20 marks**, and the pass mark is **26**: you cannot
